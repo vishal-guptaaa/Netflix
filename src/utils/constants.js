@@ -7,6 +7,8 @@ export const Background_URL =
 export const User_Icon =
   "https://avatars.githubusercontent.com/u/144479256?v=4";
 
+export const CDN_URL = "https://image.tmdb.org/t/p/w500/";
+
 const APT_KEY = "4773d753584de0fed09fe1ebca41258b";
 
 export const API_Options = {
