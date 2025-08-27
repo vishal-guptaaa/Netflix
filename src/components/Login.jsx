@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Background_URL } from "../utils/constants";
+import { Background_URL, User_Icon } from "../utils/constants";
 import { useRef } from "react";
 import checkValidData from "../utils/Validate";
 import Header from "./Header";
@@ -45,7 +45,7 @@ const Login = () => {
           const user = userCredential.user;
           updateProfile(user, {
             displayName: name.current.value,
-            photoURL: "https://avatars.githubusercontent.com/u/144479256?v=4",
+            photoURL: User_Icon,
           })
             .then(() => {
               const { uid, email, displayName, photoURL } = auth.currentUser;
@@ -61,7 +61,6 @@ const Login = () => {
             .catch((error) => {
               setErrorMessage(error.message);
             });
-          console.log(user);
         })
         .catch((error) => {
           const errorCode = error.code;
@@ -79,7 +78,6 @@ const Login = () => {
           // Signed in
           const user = userCredential.user;
           navigate("/browse");
-          console.log(user);
         })
         .catch((error) => {
           const errorCode = error.code;
