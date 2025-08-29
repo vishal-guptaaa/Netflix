@@ -19,3 +19,11 @@ export const API_Options = {
       "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI0NzczZDc1MzU4NGRlMGZlZDA5ZmUxZWJjYTQxMjU4YiIsIm5iZiI6MTc1NTQ0MTc5NS4xOTM5OTk4LCJzdWIiOiI2OGExZWE4MzFmZGE4ZTNiMGU2MWMwYjQiLCJzY29wZXMiOlsiYXBpX3JlYWQiXSwidmVyc2lvbiI6MX0.DMZzJD1ItoMJOl_icyRdQVjxLLqFufEITxdK9u-Bgog",
   },
 };
+
+export const SUPPORTED_LANGUAGE = [
+  { identifier: "en-Us", name: "English" },
+  { identifier: "hi-IN", name: "Hindi" },
+  { identifier: "es-MX", name: "Spanish" },
+  { identifier: "fr-FR", name: "French" },
+  { identifier: "de-DE", name: "German" },
+];
