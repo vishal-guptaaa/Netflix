@@ -88,58 +88,60 @@ const Login = () => {
   };
 
   return (
-    <div>
-      <Header />
-      <div className="absolute">
-        <img src={Background_URL} alt="background image" />
-      </div>
+      <div>
+        <Header />
+        <div className="absolute">
+          <img 
+          className="h-screen object-cover md:h-full"
+           src={Background_URL} alt="background image" />
+        </div>
 
-      <form
-        onSubmit={(e) => {
-          e.preventDefault();
-        }}
-        className="bg-black/80 absolute p-12 text-white  w-3/12 my-36 mx-auto right-0 left-0 rounded-lg"
-      >
-        <h1 className="text-3xl font-bold py-4">
-          {isSignInFrom ? "Sign In" : "Sign Up"}
-        </h1>
-        {!isSignInFrom && (
+        <form
+          onSubmit={(e) => {
+            e.preventDefault();
+          }}
+          className="bg-black/80 absolute p-12 text-white w-[90%] md:w-3/12 my-36 mx-auto right-0 left-0 rounded-lg"
+        >
+          <h1 className="text-3xl font-bold py-4">
+            {isSignInFrom ? "Sign In" : "Sign Up"}
+          </h1>
+          {!isSignInFrom && (
+            <input
+              ref={name}
+              className="p-4 my-4  border rounded-md w-full bg-gray-700 cursor-pointer"
+              type="text"
+              placeholder="Full Name"
+            />
+          )}
           <input
-            ref={name}
+            ref={email}
             className="p-4 my-4  border rounded-md w-full bg-gray-700 cursor-pointer"
             type="text"
-            placeholder="Full Name"
+            placeholder="Email Address"
           />
-        )}
-        <input
-          ref={email}
-          className="p-4 my-4  border rounded-md w-full bg-gray-700 cursor-pointer"
-          type="text"
-          placeholder="Email Address"
-        />
-        <input
-          ref={password}
-          className="p-4 my-4  border rounded-md w-full bg-gray-700 cursor-pointer"
-          type="password"
-          placeholder="Password"
-        />
+          <input
+            ref={password}
+            className="p-4 my-4  border rounded-md w-full bg-gray-700 cursor-pointer"
+            type="password"
+            placeholder="Password"
+          />
 
-        <p className="text-red-500 font-bold text-lg">{errorMessage}</p>
+          <p className="text-red-500 font-bold text-lg">{errorMessage}</p>
 
-        <button
-          className="my-6 p-4 border bg-red-500 rounded-md w-full cursor-pointer"
-          onClick={handleButtonClick}
-        >
-          {isSignInFrom ? "Sign In" : "Sign Up"}
-        </button>
+          <button
+            className="my-6 p-4 border bg-red-500 rounded-md w-full cursor-pointer"
+            onClick={handleButtonClick}
+          >
+            {isSignInFrom ? "Sign In" : "Sign Up"}
+          </button>
 
-        <p className="py-4 cursor-pointer" onClick={toggleSignInForm}>
-          {isSignInFrom
-            ? "New to Netflix?Sign Up now."
-            : "Already Registered?Sign In now."}
-        </p>
-      </form>
-    </div>
+          <p className="py-4 cursor-pointer" onClick={toggleSignInForm}>
+            {isSignInFrom
+              ? "New to Netflix?Sign Up now."
+              : "Already Registered?Sign In now."}
+          </p>
+        </form>
+      </div>
   );
 };
 

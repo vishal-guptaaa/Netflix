@@ -57,11 +57,15 @@ const Header = () => {
   };
 
   return (
-    <div className="bg-gradient-to-b from-black w-full py-2 px-8 absolute z-10 flex justify-between items-center">
-      <img className="w-48 cursor-pointer" src={LOGO_URL} alt="Netflix Logo" />
+    <div className=" bg-gradient-to-b from-black w-screen py-2 px-8 absolute z-10 flex flex-col md:flex-row md:justify-between items-center">
+      <img
+        className="mx-auto md:mx-0 w-48 cursor-pointer"
+        src={LOGO_URL}
+        alt="Netflix Logo"
+      />
 
       {user && (
-        <div className="flex items-center gap-5">
+        <div className="flex gap-5">
           {showGptSearch && (
             <select
               className="cursor-pointer bg-gray-900 text-white px-3 py-2 rounded-md outline-none"
@@ -82,7 +86,7 @@ const Header = () => {
             {showGptSearch ? "Homepage" : "GPT search"}
           </button>
           <img
-            className="w-10 rounded-full cursor-pointer"
+            className="hidden md:inline-block w-10 rounded-full cursor-pointer"
             alt="Usericon"
             src={user?.photoURL}
           />
