@@ -11,19 +11,21 @@ export const CDN_URL = "https://image.tmdb.org/t/p/w500/";
 
 const APT_KEY = "4773d753584de0fed09fe1ebca41258b";
 
+export const GEMINI_API_KEY = import.meta.env.VITE_GEMINI_API_KEY;
+
 export const API_Options = {
   method: "GET",
   headers: {
     accept: "application/json",
-    Authorization:
-      "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI0NzczZDc1MzU4NGRlMGZlZDA5ZmUxZWJjYTQxMjU4YiIsIm5iZiI6MTc1NTQ0MTc5NS4xOTM5OTk4LCJzdWIiOiI2OGExZWE4MzFmZGE4ZTNiMGU2MWMwYjQiLCJzY29wZXMiOlsiYXBpX3JlYWQiXSwidmVyc2lvbiI6MX0.DMZzJD1ItoMJOl_icyRdQVjxLLqFufEITxdK9u-Bgog",
+    Authorization: `Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI0NzczZDc1MzU4NGRlMGZlZDA5ZmUxZWJjYTQxMjU4YiIsIm5iZiI6MTc1NTQ0MTc5NS4xOTM5OTk4LCJzdWIiOiI2OGExZWE4MzFmZGE4ZTNiMGU2MWMwYjQiLCJzY29wZXMiOlsiYXBpX3JlYWQiXSwidmVyc2lvbiI6MX0.DMZzJD1ItoMJOl_icyRdQVjxLLqFufEITxdK9u-Bgog
+`,
   },
 };
 
 export const SUPPORTED_LANGUAGE = [
-  { identifier: "en-Us", name: "English" },
-  { identifier: "hi-IN", name: "Hindi" },
-  { identifier: "es-MX", name: "Spanish" },
-  { identifier: "fr-FR", name: "French" },
-  { identifier: "de-DE", name: "German" },
+  { identifier: "en", name: "English" },
+  { identifier: "hindi", name: "Hindi" },
+  { identifier: "spanish", name: "Spanish" },
+  { identifier: "french", name: "French" },
+  { identifier: "german", name: "German" },
 ];

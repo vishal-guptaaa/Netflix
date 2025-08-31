@@ -1,21 +1,21 @@
 const lang = {
-  "en-US": {
-    search: "search",
+  en: {
+    search: "Search",
     gptSearchPlaceholder: "What would you like to watch on today?",
   },
-  "hi-IN": {
+  hindi: {
     search: "खोज",
     gptSearchPlaceholder: "आज आप क्या देखना चाहेंगे?",
   },
-  "es-MX": {
+  spanish: {
     search: "buscar",
     gptSearchPlaceholder: "¿Qué te gustaría ver hoy?",
   },
-  "fr-FR": {
+  french: {
     search: "recherche",
     gptSearchPlaceholder: "Qu'aimeriez-vous regarder aujourd'hui ?",
   },
-  "de-DE": {
+  german: {
     search: "suchen",
     gptSearchPlaceholder: "Was möchten Sie heute sehen?",
   },

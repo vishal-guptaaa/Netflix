@@ -8,12 +8,12 @@ const MainContainer = () => {
   //   Early Return
   if (!movies) return;
 
-  const mainMovie = movies[9];
+  const mainMovie = movies[2];
 
   const { original_title, overview, id } = mainMovie;
 
   return (
-    <div className="overflow-x-hidden">
+    <div>
       <VideoTitle title={original_title} overview={overview} />
       <VideoBackground movieId={id} />
     </div>
