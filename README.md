@@ -62,3 +62,13 @@
 
 
 
+# Screenshots
+
+![Screenshot](./src/assets/Screenshot%20(17).png)
+![Screenshot](./src/assets/Screenshot%20(18).png)
+![Screenshot](./src/assets/Screenshot%20(19).png)
+![Screenshot](./src/assets/Screenshot%20(20).png)
+![Screenshot](./src/assets/Screenshot%20(21).png)
+![Screenshot](./src/assets/Screenshot%20(22).png)
+![Screenshot](./src/assets/Screenshot%20(23).png)
+
